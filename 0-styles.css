@@ -45,9 +45,12 @@
     width: 161px;
     height: 32px;
 }
+
 .center_hero {
     position: absolute;
     top: 200px/* Styles for mobile (up to 767px wide) */
+}
+    
     @media (max-width: 767px) {
         .header-main {
             text-align: center;
@@ -135,7 +138,8 @@
         flex-direction: row;
     }
 }
-;
+.center_hero {
+    right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent ; /* Background color for the text container */
