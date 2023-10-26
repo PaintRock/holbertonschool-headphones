@@ -2,182 +2,78 @@
 @media (max-width: 767px) {
     .header-main {
         text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-}
-
-/* Styles for desktop (768px wide and above) */
-@media (min-width: 768px) {
-    .header-main {
-        flex-direction: row;
+        position: static; /* Remove the position and background properties */
+        background-color: transparent; 
+        padding: 10px 0;
+        display: flex;
         justify-content: space-between;
+        align-items: center; /* Correct property name */
     }
 
-    .menu {
-        flex-direction: row;
+    .header-left img {
+        position: relative; /* Remove this line */
+        justify-content: left; /* Remove this line */
+        width: 161px;
+        height: 32px;
     }
-}
-.hero-container {
-    position: relative;
-}
 
-.header-main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent; /* Transparent black background */
-    padding: 10px 0;
-    text-align: right;
-    color: #fff; /* Text color for menu items */
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-}
-.header-left img {
-    position: relative;
-    display: flex;
-    justify-content: left;
-    left: ;
-    width: 161px;
-    height: 32px;
-}
-
-.center_hero {
-    position: absolute;
-    top: 200px/* Styles for mobile (up to 767px wide) */
-}
-    
-    @media (max-width: 767px) {
-        .header-main {
-            text-align: center;
-        }
-    
-        .menu {
-            flex-direction: column;
-        }
-    }
-    
-    /* Styles for desktop (768px wide and above) */
-    @media (min-width: 768px) {
-        .header-main {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        .menu {
-            flex-direction: row;
-        }
-    }
-    /* Styles for mobile (up to 767px wide) */
-@media (max-width: 767px) {
-    .header-main {
+    .center_hero {
+        position: absolute;
+        top: 200px; /* Add a semicolon to separate properties */
+        right: 0; /* Add this property and value */
+        left: 0; /* Add this property and value */
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        padding: 150px;
         text-align: center;
+        color: #fff;
     }
 
-    .menu {
-        flex-direction: column;
-    }
-}
-
-/* Styles for desktop (768px wide and above) */
-@media (min-width: 768px) {
-    .header-main {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .menu {
-        flex-direction: row;
-    }
-}
-/* Styles for mobile (up to 767px wide) */
-@media (max-width: 767px) {
-    .header-main {
-        text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-}
-
-/* Styles for desktop (768px wide and above) */
-@media (min-width: 768px) {
-    .header-main {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .menu {
-        flex-direction: row;
-    }
-}
-/* Styles for mobile (up to 767px wide) */
-@media (max-width: 767px) {
-    .header-main {
-        text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-}
-
-/* Styles for desktop (768px wide and above) */
-@media (min-width: 768px) {
-    .header-main {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .menu {
-        flex-direction: row;
-    }
-}
-.center_hero {
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent ; /* Background color for the text container */
-    padding: 150px;
-    text-align: center;
-    color: #fff; /* Text color for the text container */
-
-}
     .center_hero h1 {
         font-size: 22px;
-        display: text;
+        display: block; /* Change "text" to "block" */
     }
 
     .center_hero h2 {
         font-size: 12px;
-        display: text;
+        display: block; /* Change "text" to "block" */
     }
-    
+
     .center_hero p {
         font-size: 16px;
+        display: block; /* Change "text" to "block" */
     }
 
-.center_hero {
-    top: 200px;
-    bottom: 300px;
-    text-size-adjust: 25px;
+    .menu {
+        display: flex;
+        justify-content: center; /* Change "right" to "center" */
+    }
+
+    .menu-item {
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
 }
 
-.menu {
-    display: flex;
-    justify-content: right;
-}
+/* Styles for desktop (768px wide and above) */
+@media (min-width: 768px) {
+    .header-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.menu-item {
-    margin: 0 15px; /* Adjust the spacing between menu items */
-    font-weight: bold;
-}
+    .menu {
+        flex-direction: row;
+        justify-content: right; /* Add this line */
+    }
 
-.hero-image img {
-    width: 100%; /* Adjust the width of your image as needed */
+    .center_hero {
+        top: 200px; /* Add this line */
+        bottom: 300px; /* Add this line */
+        font-size: 25px; /* Correct the property name */
+    }
 }
